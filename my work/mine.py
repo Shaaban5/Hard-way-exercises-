@@ -9,3 +9,4 @@ print "str.count(sub, 4, 40) : ", string.count('i', 0, 40) #count of ('i', start
 
 s='-'
 print s.join(string)
+
