@@ -1,7 +1,8 @@
 print 'How old are you?', # comma has been added to continue print in same line
 age=raw_input()   # diff raw_input() type it raw inside str & input() type it num
 print 'how tall are you?',
-tall=int(raw_input())	# int() convert str to integer incase str are nums
+tall=int(raw_input())	# int() convert str to integer incase str contain nums only
+						# float() convert str to floating no. in case str contain nums only
 
 weight=input('How much do you weight?')	# prompt msg to enter the data
 

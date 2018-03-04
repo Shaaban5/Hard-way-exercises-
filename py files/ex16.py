@@ -10,7 +10,7 @@ raw_input("?")
 
 print "Opening the file..."
 target = open(filename, 'w') # 'w' tell to creat file if not exist and start writing from beging
-							 # 'a' creat file if not exist and stat wrinting from end
+							 # 'a' creat file if not exist and stat writing from end
 
 print "Truncating the file. Goodbye!"
 raw_input("?")
