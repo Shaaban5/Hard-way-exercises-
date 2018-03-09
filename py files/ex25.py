@@ -11,7 +11,7 @@ print sort_words(['ahmed', 'ola', 'bilal', 19,30,44])
 
 def print_first_word(words):
 	"""Prints the first word after popping it off."""
-	word = words.pop(0) # take off the given index and return it 
+	word = words.pop(0) # take off the given index from a list if no index givien it consider last elemnet '-1'
 	print word 			
 	print words 		# the list will be cutted
 print_first_word(['ahmed','ola','bilal'])
