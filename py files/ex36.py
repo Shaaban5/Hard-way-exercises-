@@ -60,6 +60,15 @@ for letter in 'Python':
 '_______________________________________________'
 # else statement could be used with while & for loop just like if 'used when loop become false'
 '_______________________________________________'
+''' How python think: mylist.append('str')
+1st look for mylist ex:var, list, func, class
+2nd find a func called append in it
+and python read it like append(mylist , 'str')
+mylist = str_func's module
+append() = func called append
+'''
+'_______________________________________________'
+
 dict = {'Name':'Zara', 'Age':7, 'Class':'First'}
 dict['Age'] = 8; # update existing entry
 dict['School'] = "DPS School"; # Add new entry
