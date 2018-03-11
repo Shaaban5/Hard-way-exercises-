@@ -10,3 +10,5 @@ print "str.count(sub, 4, 40) : ", string.count('i', 0, 40) #count of ('i', start
 s='-'
 print s.join(string)
 
+print '000word ss000'.strip('0') # erase the given charc from beg and end of the word
+# defualt earse spaces in beg and end of the phrase

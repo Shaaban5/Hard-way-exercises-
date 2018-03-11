@@ -23,10 +23,13 @@ PHRASES = {
 PHRASE_FIRST = False
 if len(sys.argv) == 2 and sys.argv[1] == "english":
 	PHRASE_FIRST = True
+# print len(sys.argv) will give # of arguments iin this case (2) file name & next word 'english'
+# print sys.argv	will give the second name in this case 'english'
 	
 # load up the words from the website
 for word in urlopen(WORD_URL).readlines():
 	WORDS.append(word.strip())
+
 
 def convert(snippet, phrase):
 	class_names = [w.capitalize() for w in 
@@ -64,13 +67,14 @@ try:
         snippets = PHRASES.keys()
         random.shuffle(snippets)
         for snippet in snippets:
-            phrase = PHRASES[snippet]
-            question, answer = convert(snippet, phrase)
-            if PHRASE_FIRST:
-               question, answer = answer, question
-            print question
-            raw_input("> ")
-            print "ANSWER: %s\n\n" % answer
+        	phrase = PHRASES[snippet]
+        	question, answer = convert(snippet, phrase)
+        	if PHRASE_FIRST:
+        		question, answer = answer, question
+        	print question
+        	raw_input("> ")
+        	print "ANSWER: %s\n\n" % answer
+
 
 except EOFError:
 	print "\nBye"

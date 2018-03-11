@@ -29,6 +29,8 @@ dict_to_list = region.items()
 print dict_to_list[0]
 
 print region.get('Riyadh') # .get() here just return the value of named key
-print region.get('Hail', None ) # .get(new key , value or None) return here a value or None for key that doesnt exist
+print region.get('Hail', None ) # .get(new key , value or None) return here a value or None for key that doesnt exist but dont add it to dict
+
+print region.keys() # print all the keys name in a list
 
 print region
