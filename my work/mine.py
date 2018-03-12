@@ -12,3 +12,10 @@ print s.join(string)
 
 print '000word ss000'.strip('0') # erase the given charc from beg and end of the word
 # defualt earse spaces in beg and end of the phrase
+
+def test():
+    return 'test'
+T = test # we changed the function name to another name
+print T()
+TS = test() # we assigned function value to a var
+print TS
