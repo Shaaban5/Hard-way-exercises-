@@ -19,3 +19,4 @@ T = test # we changed the function name to another name
 print T()
 TS = test() # we assigned function value to a var
 print TS
+
