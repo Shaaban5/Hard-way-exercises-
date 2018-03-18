@@ -13,7 +13,7 @@ print time.asctime([2009, 1, 1, 0, 0, 0, 2, 0, 0]) # takes nothing for current o
 time.sleep(0) # sys sleep for given secs then contiue printing after the secs 
 
 print time.strftime('%H',time.localtime()) # takes str only for current or str and given 9 tupletime return time formated as u given
-# % a'A day b'B month y'Y yr(shrt'ful name)
+# % a'A day b'B month y'Y yr(shrt'full) names
 #%d/%m/%y  day month year numbers = %x for date but mm/dd/yy %X represent time only
 # %U wk# in year %j day of year %z time zone name
 # %c date and time %H hr in 24
@@ -23,6 +23,13 @@ print time.strptime('21 november 2015 00:05:05', '%d %B %Y %X') # takes 2 str an
 
 t = [2009, 1, 1, 0, 0, 0, 0, 0, 0]
 print time.strftime('%d/%m/%Y\t%X',t) 
+
+from datetime import date
+
+print date.today().year
+print date.today().month
+print date.today().day
+
 '______________________________________________'
 import calendar
 

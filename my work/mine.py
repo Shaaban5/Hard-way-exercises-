@@ -20,3 +20,11 @@ print T()
 TS = test() # we assigned function value to a var
 print TS
 
+''' with & as
+used for quick action with objectes without assigning variables or func
+ex: here we created file for certain purpose then closed it without many lines
+with open('new folder/test.py' , 'w') as f :
+	f.close()										'''
+
+
+

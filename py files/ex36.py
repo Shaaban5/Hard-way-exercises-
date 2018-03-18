@@ -36,6 +36,9 @@ print mylist
 new = [[x+1] for x in range(3)] # creates an individual list for each element 
 print new
 
+T_or_F_list = [ x >= 3 for x in range(5)] # print a result of true or false instead in the new list
+print T_or_F_list
+
 generator = (x+1 for x in range(3)) # generator is a list but for loop purpuse only and it use () not []
 for i in generator:
 	print i
@@ -79,22 +82,4 @@ dict['School'] = "DPS School"; # Add new entry
 print "dict['Age']: ", dict['Age']
 print "dict['School']: ", dict['School']
 print dict
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

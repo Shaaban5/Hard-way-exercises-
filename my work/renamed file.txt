@@ -1,0 +1,4 @@
+add line by os.writeinting inside text file by write method through python
+line2
+line2
+line3
