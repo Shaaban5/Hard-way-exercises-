@@ -74,3 +74,4 @@ os.startfile('renamed file.txt')
 
 print os.path.split(r'C:\Users\secretary-1\Udacity\my-exercise\my work\renamed file.txt')
 # os.path.split(r'path') split the path to 2 arguments tree and file name (or last folder name)
+

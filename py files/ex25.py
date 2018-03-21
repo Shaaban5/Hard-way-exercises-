@@ -47,13 +47,23 @@ print "Let's practice everything."
 print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
 
 poem = """
-\tThe lovely world
-with logic so firmly planted
-cannot discern \n the needs of love
-nor comprehend passion from intuition
-and requires an explantion
-where there is none.
+\t1The lovely world 1
+with logic so 1 firmly planted
+cannot discern \n the needs 1 of love
+nor comprehend passion from 1 intuition
+and requires 1 an explantion
+where there 1 is none.
 """
+
+"""  # using quot or double quot without assigning to var used as documentaion
+"""
+print poem.find('1',poem.find('1', poem.find('1', poem.find('1')+1)+1)+1) # find(1, comes after find(1)+1)
+# find('str', start index, end index) return -1 if doesnt find the require
+print poem.index('1',poem.index('1', poem.index('1')+1)+1) 
+# same just like .find() but it raise an error if didnt find the required
+
+# print poem.replace('1', '2' , 2 ) # print str and replace('str', with given 'str', 2 times only)
+print poem.count('1') # check how many count of given str
 
 
 print "--------------"
