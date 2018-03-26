@@ -41,7 +41,7 @@ print new_text.readlines() # return a list contain each line in 1 element
 new_text.close() # this close the file again
 print new_text.closed
 '______________________________________________'
-import os, sys
+import os
 os.remove('renamed file.txt') # delete file with (given name)
 os.rename('test text.txt', 'renamed file.txt') # rename (given name , to new name)
 #os.renames('old file', 'new folder/new file name') # move and chage file name (from, to )
