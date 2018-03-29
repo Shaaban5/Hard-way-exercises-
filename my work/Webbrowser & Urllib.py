@@ -3,7 +3,7 @@ from webbrowser import Chrome # used to call Chrome class by using .register('na
 
 #webbrowser.open(r'www.google.com',0) # open url
 #webbrowser.open_new(r'www.google.com')
-print webbrowser.register('chrome',	Chrome('chrome')) # here we confirm using chrome by useing Chrome class
+print webbrowser.register('chrome',	Chrome('chrome')) # here we confirm using chrome by using Chrome class
 
 #google = webbrowser
 #google.open(r'www.google.com')
@@ -21,5 +21,11 @@ print response.geturl()
 headers = response.info()
 print 'DATE    :', headers['date']
 
-print urllib.urlopen(r'http://www.wdylike.appspot.com/?q=shot and shot').read()
+print urllib.urlopen(r'http://www.wdylike.appspot.com/?q=shit and shot').read()
+
+happynumbers = urllib.urlopen(r'http://www.practicepython.org/assets/happynumbers.txt')
+happylist = happynumbers.read().split() # make a list for the web page openned
+
+# or could be 1 line as follow
+primenumberss = urllib.urlopen(r'http://www.practicepython.org/assets/primenumbers.txt').read().split()
 

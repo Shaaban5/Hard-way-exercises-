@@ -41,6 +41,8 @@ print list1
 print list1[::-1] # return list started from : to : and read as -1 (this like reverse)
 
 list1.sort()	#  it sort the list element as numb then alphabit
+print set(list1) # use set() to remove dublicated elements 
+print list(list1) # then use list() again to return it as a normal list
 print list1.pop() # remove and return last element defalut is -1 or given your index 
 print list1
 
@@ -62,6 +64,10 @@ check = {True: "Not Weird", False: "Weird"}	# dict to print certain str if resul
 print check[ n%2 == 0 and ( n in range(2,6) or n > 20 ) ] # printing from dict with condition
 # n in range() is a condition
 # condition and ( condition or condition )
+
+# check if this num prime or not
+prime = {True : 'Yes..its a prime', False : 'Not a prime'}
+print prime[ n > 1 and 0 not in map(lambda x : n % x, range(2, n)) ]
 '_________________________________________________'
 '''
 map(func, list ) # its apply a func to each element in a list and return the processed list
@@ -117,4 +123,22 @@ loop = True
 while loop :
 	print 'the loop is working fine'
 	loop = False
+'_________________________________________________'
+# using dict in loop
+import random
 
+def cow(x):
+    num = [str(i) for i in range(0,10)] 
+    sampnum = random.sample(num, 4)     # cant use for list inside sample
+    splitedx = [i for i in str(x)]
+    print num, sampnum, splitedx
+    cowbull = {'cow': 0, 'bull':0}
+    for i in splitedx:
+        if i in sampnum :
+            cowbull['cow'] += 1 # could be used to update dif var
+        else:
+            cowbull['bull'] += 1
+    print cowbull
+
+cow(1234)
+'_________________________________________________'
